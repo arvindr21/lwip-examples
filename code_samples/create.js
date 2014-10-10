@@ -14,6 +14,5 @@ lwip.create(500, 500, 'red', function(err, image) {
     fs.writeFile('images/new/buffer_new_output.jpg', buffer, function(err) {
       if (err) throw err;
     });
-
   });
 });

@@ -2,7 +2,7 @@ var lwip = require('lwip');
 
 // Crop with dimensions
 lwip.open('images/portrait.jpg', function(err, image) {
-
+  if (err) throw err;
   var _cropOpt = {
     left: 400,
     top: 200,
@@ -21,7 +21,7 @@ lwip.open('images/portrait.jpg', function(err, image) {
 
 // Crop from center
 lwip.open('images/portrait.jpg', function(err, image) {
-
+  if (err) throw err;
   var _cropOpt = {
     width: 300,
     height: 300
